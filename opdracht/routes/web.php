@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/inschrijvingind', function () {
+    return view('inschrijvingind');
+});
+
+Route::get('/inschrijvinggroep', function () {
+    return view('inschrijvinggroep');
+});
