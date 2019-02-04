@@ -19,3 +19,6 @@ Route::get('/ind', 'PagesController@ind');
 Route::get('/school', 'PagesController@school');
 
 Route::get('/lopers', 'ProjectsController@index');
+Route::post('/lopers', 'ProjectsController@store');
+
+Route::get('/lopers/create', 'ProjectsController@create');

@@ -12,7 +12,7 @@
             <li class="links"><a href="/">Home</a></li>
             <li class="links"><a href="/ind">Individueel inschrijven</a></li>
             <li class="links"><a href="/school">Als school inschrijven</a></li>
-            <li class="links"><a href="#!">Laatste nieuws</a></li>
+            <li class="links"><a href="/lopers">Lopers</a></li>
         </ul>          
        
 
