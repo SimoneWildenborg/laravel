@@ -105,7 +105,10 @@
 @section('content')
 
     <div class="h1"> <p>Individueel inschrijven</p></div>
-    <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+    <BR><BR><BR><BR><BR><BR>
+@include('lopers.create')
+    
+    <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
 @endsection
 
 @extends('layout')

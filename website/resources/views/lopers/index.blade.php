@@ -126,7 +126,7 @@
           
             @endforeach
         </table>
-        <BR><BR><BR><BR><BR><BR><BR><BR>
+        <BR><BR>
 @endsection
     </body>
     </html>

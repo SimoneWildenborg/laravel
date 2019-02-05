@@ -1,20 +1,59 @@
 <!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+        <!-- Styles -->
+        <style>
+        .form{
+            
+            height: 6vh;
+            margin-left: 32vw;
+            margin-top: 5vh;
+        }
+        .input{
+            width: 35vw;
+            height: 5vh;
+            text-align: center;
+            border: 3px solid #8f8f8f;
+            margin-bottom: 0.5vh;
+            border-radius: 3%;
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+        .button{
+            margin-top: 2vh;
+            margin-left: 13vw;
+            width:8vw;
+            height: 5vh;
+            background-color: #8f8f8f;
+            border: 2px solid #000;
+            border-radius: 5%;
+        }
+        button:hover{
 
-<head>
-
+        }
+</style>
 </head>
 <body>
+
+
+    
+
     <h1>Schrijf je hier in</h1>
 
-<form action="/lopers" method="POST" >
+<form class="form" action="/lopers" method="POST" >
     {{ csrf_field() }}
     
-    <input type="text" name="name" placeholder="Naam deelnemer">
-    <input type="text" name="email" placeholder="Emailadres deelnemer">
-    <input type="numbers" name="distance" placeholder="Afstand (5km, 10km, 15km)">
-    <button type="submit">Inschrijven</button>
+    <input class="input" type="text" name="name" placeholder="Vul hier uw naam in." required><BR>
+    <input class="input" type="text" name="email" placeholder="Vul hier uw emailadres in." required><BR>
+    <input class="input" type="numbers" name="distance" placeholder="Vul hier de afstand (5km, 10km, 15km) in." required><BR>
+    <button class="button" type="submit">Inschrijven</button>
 </form>
 
     <!--<BR>

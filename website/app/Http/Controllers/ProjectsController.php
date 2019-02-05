@@ -22,6 +22,10 @@ class ProjectsController extends Controller
     public function store(Request $request)
     {
         $loper = new \App\Loper;
+
+        
+
+
         $loper->name = $request->input('name');
         $loper->email = $request->input('email');
         $loper->distance = $request->input('distance');
