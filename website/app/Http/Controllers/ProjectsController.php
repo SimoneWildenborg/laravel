@@ -10,7 +10,7 @@ class ProjectsController extends Controller
     {
         $lopers = \App\Loper::all();
         
-        return view('lopers.index', ['lopers' => $lopers]);
+        return view('lopers.index', compact('lopers'));
     }
 
     public function create()
@@ -32,8 +32,10 @@ class ProjectsController extends Controller
         $loper->save();
 
         $lopers = \App\Loper::all();
-        return view('lopers.index', ['lopers' => $lopers]);
+        return redirect('/lopers');
+        //return view('lopers.index', ['lopers' => $lopers]);
         // $request()->all();
+
     }
 
 

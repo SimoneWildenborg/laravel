@@ -109,6 +109,7 @@
 
     <div class="h1"> <p>Lopers</p></div>
     <BR><BR><BR><BR><BR><BR><BR><BR>
+        <p>Individuele inschrijvingen</p>
     <table>
             <tr>
                 <th>ID</th>

@@ -36,7 +36,11 @@
             border-radius: 5%;
         }
         button:hover{
-
+            background:red;
+            border:2px solid #8f8f8f;
+            
+            font-weight:800;
+            font-size: 1em;
         }
 </style>
 </head>

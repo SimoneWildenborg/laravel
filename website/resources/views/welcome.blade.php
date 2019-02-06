@@ -51,6 +51,7 @@
                 display:inline;
                 margin-left: 2vw;
                 margin-top: 4vh;
+                
             }
 
             .links > a {
@@ -62,8 +63,7 @@
                 letter-spacing: .2vw;
                 text-decoration: none;
                 text-transform: uppercase;
-                
-                background-color:#8f8f8f;
+                                background-color:#8f8f8f;
                 opacity: 1;
                 color: #000;
             }
