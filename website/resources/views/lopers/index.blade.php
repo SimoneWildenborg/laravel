@@ -117,16 +117,20 @@
                 <th>Email</th>
                 <th>Distance</th>
             </tr>
-            @foreach ($lopers as $loper)
+        @foreach ($lopers as $loper)
             <tr>
                 <td>{{ $loper->id }}</td>
                 <td>{{ $loper->name }}</td>
                 <td>{{ $loper->email }}</td>
                 <td>{{ $loper->distance }}</td>
-            </tr>
-          
-            @endforeach
-        </table>
+                <td><a href="/lopers/{{$loper->id}}/edit"></a></td>
+        <td><form method="POST"  action="/lopers/{{$loper->id}}">   
+                    @method('DELETE')
+                    @csrf
+                <button type="submit">Delete</button>
+            </form>
+        @endforeach
+    </table>
         <BR><BR>
 @endsection
     </body>

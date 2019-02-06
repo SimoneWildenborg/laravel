@@ -38,7 +38,10 @@ class ProjectsController extends Controller
 
     }
 
-
+    public function destroy($id){
+        $loper = \App\Loper::find($id)->delete();
+        return redirect('lopers');
+    }
 
 
 }

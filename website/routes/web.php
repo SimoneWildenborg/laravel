@@ -22,3 +22,5 @@ Route::get('/lopers', 'ProjectsController@index');
 Route::post('/lopers', 'ProjectsController@store');
 
 Route::get('/lopers/create', 'ProjectsController@create');
+
+Route::delete('/lopers/{loper}', 'ProjectsController@destroy');
